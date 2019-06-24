@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "72e4875e-a4cd-401e-8d89-68e102a06082": {
+        "id": "72e4875e-a4cd-401e-8d89-68e102a06082",
+        "parent": null,
+        "name": "induniltokyo",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "4cf545a3-d23c-499f-b027-714e5693d33b"
+        ],
+        "isRemovable": false,
+        "filePath": "induniltokyo"
+      },
+      "4cf545a3-d23c-499f-b027-714e5693d33b": {
+        "id": "4cf545a3-d23c-499f-b027-714e5693d33b",
+        "parent": "72e4875e-a4cd-401e-8d89-68e102a06082",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "induniltokyo/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapNortheast1Tokyoindunilqatstany",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "72e4875e-a4cd-401e-8d89-68e102a06082",
+    "openFiles": [
+      "4cf545a3-d23c-499f-b027-714e5693d33b"
+    ],
+    "currentFileId": "4cf545a3-d23c-499f-b027-714e5693d33b",
+    "resources": {
+      "apigapNortheast1Tokyoindunilqatstany": {
+        "name": "apigapNortheast1Tokyoindunilqatstany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-northeast-1",
+          "apiMode": 0,
+          "apiName": "Tokyo",
+          "endpointType": "REGIONAL",
+          "resourceMode": 0,
+          "resourceName": "indunil/qa/tst",
+          "resourcePath": "/indunil/qa/tst",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test1",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "induniltokyo",
+    "projectDescription": "induniltokyo",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-northeast-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561378221026
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "induniltokyo",
+      "url": "https://github.com/Indunil1992/induniltokyo"
+    }
+  }
+}
